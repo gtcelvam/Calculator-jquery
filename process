@@ -1,0 +1,7 @@
+val()
+
+substring 
+string.substring(start, end)
+Substring creates a new string based on the new starting index value and the ending index value.
+
+eval

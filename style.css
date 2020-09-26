@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, red,blue);
+}
+
+.para{
+    width: 280px;
+    background : none;
+    height: 100px;
+    text-align: right;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+}
+
+section{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+   margin-top: 25px;
+    animation: anime 1s ease-in-out forwards;   
+}
+
+.form{
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 4px rgb(70, 70, 70,0.5);
+    transition: 0.5s ease-in-out;
+    
+}
+.form:hover{
+    background-color: rgba(255, 113, 113, 0.3);
+}
+section .btn{
+    width: 50px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    border: none;
+    background-color: rgb(255, 11, 11,0.3);
+    color: white;
+    transition: 0.5s ease-in-out;
+    border-radius: 2px;
+}
+.btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+@keyframes anime{
+    0%{left: -100%;}
+    70%{left: 60%;}
+    100%{left: 50%;};
+}

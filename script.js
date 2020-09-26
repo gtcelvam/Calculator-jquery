@@ -1,16 +1,22 @@
-function insrt(num){
-    $(".calc-display").val($(".calc-display").val()+num);
+function insert(value){
+    $(".para").val($(".para").val()+`${value}`);
 }
 
-function eql(){
-    $(".calc-display").val(eval($('.calc-display').val()));
+function equl(){
+    $(".para").val(`${$(".para").val()}\n
+    ${eval($(".para").val())}`);
+}
+
+function ope(sign){
+    $(".para").val($('.para').val()+sign);
 }
 
 function c(){
-    $('.calc-display').val("");
+    $(".para").val("");
 }
 
 function del(){
-    value = $('.calc-display').val();
-    $('.calc-display').val(value.substring(0,value.length - 1));
+    value = $(".para").val();
+    $(".para").val(value.substring(0,value.length-1));
 }
+
